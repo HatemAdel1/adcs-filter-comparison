@@ -1,5 +1,6 @@
 # ADCS Attitude Estimation — EKF vs UKF vs Particle Filter
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21250688.svg)](https://doi.org/10.5281/zenodo.21250688)
 ![MATLAB](https://img.shields.io/badge/MATLAB-R2021a%2B-orange?logo=mathworks)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
@@ -81,6 +82,8 @@ Seed       : rng(42) — fixed for single-run fairness
 ---
 
 ## Project Structure
+
+```text
 adcs_filter_comparison/
 │
 ├── run_full_simulation.m              ← Entry point — runs all modules in order
@@ -97,7 +100,7 @@ adcs_filter_comparison/
 ├── stress_tests_and_robustness.m     ← 5 scenarios: nominal → worst case + heatmap
 └── monte_carlo_statistical_analysis.m← 50-run MC, Wilcoxon test, Cohen's d, CDF plots
 
----
+```
 
 ## How to Run
 
@@ -117,7 +120,26 @@ run_full_simulation
 2. **6-state UKF formulation** — eliminates quaternion constraint singularity in 7-state covariance matrices.
 3. **Monte Carlo validation** — 50 runs with Wilcoxon signed-rank testing and Cohen's *d* effect size.
 
+## Citation
+
+If you use this repository in your research, please cite:
+
+```bibtex
+@software{Saber2026ADCS,
+  author = {Hatem Adel Saber},
+  title = {ADCS Attitude Estimation: EKF vs UKF vs Particle Filter},
+  year = {2026},
+  publisher = {Zenodo},
+  doi = {10.5281/zenodo.21250688},
+  url = {https://doi.org/10.5281/zenodo.21250688}
+}
+```
 ---
+## DOI
+
+Archived version of this repository is permanently available on Zenodo.
+
+DOI: <https://doi.org/10.5281/zenodo.21250688>
 
 ## License
 
